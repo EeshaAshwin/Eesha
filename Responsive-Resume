@@ -1,8 +1,0 @@
-<head>
-	<title>Use of Div tag</title>
-</head>
-<body>
-	<div id = "text">
-	<h1><b>"Welcome to the world of Web development"</b></h1>
-	</div>
-</body>
