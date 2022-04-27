@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>My Portfolio</title>
-        <!--link rel="stylesheet" href = "style.css"-->
+        <link rel="stylesheet" href = "Style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
     </head>
@@ -14,40 +14,160 @@
                     <div class="logo">        
                         <img src="https://1.bp.blogspot.com/-IJ1khUxnfc4/YPNyVdTi2xI/AAAAAAAAA6U/PzfJBdSrbPgDABi8G8TxCgFNK-9Kr2CCgCLcBGAsYHQ/s16000/take%2Ba%2Bpeek%2Bat%2Bmy%2Bportfolio%2Bby%2Baj%2Bagency%2B-%2Baj%2Baymen%2Bjerbi.gif" alt="Heading"> 
                     </div>
+                    <div class="menu">
                     <ul class="menu">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">My Skills</a></li>
-                        <li><a href="#">Personal Details</a></li>
-                        <li><a href="#">Work Experience</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#myskills">My Skills</a></li>
+                        <li><a href="#personaldetails">Personal Details</a></li>
+                        <li><a href="#work experience">Work Experience</a></li>
                     </ul>
                 </div>
+                </div>
                 </nav>
+            </header>
+            <main>
                 <div class="content">
                     <div class="text-content">
                         <div class="text">Hello, I am</div>
                         <div class="name">Eesha Ashwin</div>
                         <div class="job">
-                            <span>And, I am a </span>
+                            <div>And, I am a </div>
                             <div class="typing-text">
-                                <span>Software Developer..And A</span>
-                                <span>Web Designer!!</span>
+                                <div><p>Software Developer..</p>
+                                       <p>And A..</p><p>Web Designer!!</p>
+                                </div>
                             </div>
                         </div>
-                         <div class="buttons">
+                        <div class="buttons">
                             <button>My Resume</button>
-                         </div>
+                        </div>
                     </div>
                 </div>
-                <div class="girl">
-                    <img src="https://thumbs.dreamstime.com/b/laptop-garden-table-green-nature-background-outdoor-office-desk-computer-glasses-quarantine-home-concept-199544981.jpg" width ="300" height="300" alt="Avatar" alt="Picture">
+               
+               <div class="girl">
+                    <img src="my photo.png" width ="300" height="300" alt="Avatar" alt="Picture">
                 </div>
-                <div class="media-icons">
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
+                
+                <div class="portfolio" >
+                <div class="aboutme" id="aboutme">
+                    <h1>About Me</h1>
+                    <p>Seeking a position to utilize my software programming and management oriented work experience
+                        in an organization that will allow me to re-start my career in the Information Technology Industry 
+                        and advance my skills in Software Development.</p>
                 </div>
-            </header>
-            <body>
+                 <div class="education" id="education">
+                    <h1>Education</h1>
+                    <table class="table">
+                        <tr>
+                            <th>Graduation year</th>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Percentage</th>
+                        </tr>
+                        <tr>
+                            <td>Jun-2022 
+                                (Expected)
+                                </td>
+                            <td>Full Stack Web Development
+                                (Online Course)</td>
+                            <td>Newton School, 
+                                Bangalore, Karnataka</td>
+                            <td>Jun-2022</td>
+                        </tr>
+                        <tr>
+                            <td>Apr-2018</td>
+                            <td>Post Graduate Diploma in 
+                                Business Administration in Finance</td>
+                            <td>Symbiosis Centre for 
+                                Distance Learning</td>
+                            <td>79%</td>
+                        </tr>
+                        <tr>
+                            <td>May-2008</td>
+                            <td>B.Tech in Computer Science 
+                                Engineerin</td>
+                            <td>SASTRA University, 
+                                Thanjavur, Tamil Nadu</td>
+                            <td>77%</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="myskills" id="myskills">
+                    <h1>My Skills</h1>
+                    <div class="slidecontainer">
+                        <h3>Data Structures and Algorithm</h3>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                      </div>
+                      <div class="slidecontainer">
+                        <h3>HTML, CSS, JavaScript</h3>
+                        <input type="range" min="1" max="100" value="40" class="slider" id="myRange">
+                      </div>
+                      <div class="slidecontainer">
+                        <h3>Java, C, C++</h3>
+                        <input type="range" min="1" max="100" value="30" class="slider" id="myRange">
+                      </div>
+                      <div class="slidecontainer">
+                        <h3>ReactJS, DevOps</h3>
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                      </div>
+                </div>
+                <div class="personaldetails" id="personaldetails">
+                    <h1>Personal Details</h1>
+                    <form>
+                        <label for="dob">DOB: </label>
+                        <input type="date" id="dob" name="dob" min="1986-12-24" max="1986-12-24"><br>
+
+                        <label for="gender">Gender </label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male </label>
+                        <input type="radio" id="female" name="gender" checked>
+                        <label for="femal">Female </label><br>
+
+                        <label for="marital">Marital Status </label>
+                        <input type="checkbox" id="married" name="marital" checked>
+                        <label for="married">Married </label>
+                        <input type="checkbox" id="unmarried" name="marital">
+                        <label for="unmarried">Unmarried</label><br>
+
+                        <label for="lang">Languages </label><br>
+                        <input type="checkbox" id="english" name="lang" checked>
+                        <label for="English">English </label>
+                        <input type="checkbox" id="tamil" name="lang" checked>
+                        <label for="tamil">Tamil </label>
+                        <input type="checkbox" id="hindi" name="lang">
+                        <label for="hindi">Hindi </label>
+                    </form>
+                </div>
+                <div class="experience" id="experience">
+                    <h1>Work Experience </h1>
+                    <p><h3>1. WIPRO TECHNOLOGIES Sept 2008 –Sept 2010
+                        Location: Bangalore& Chennai
+                         Designation: Project Engineer</h3>
+                        Project Description: Performed Networking UI Management. 
+                        ● Used tools like SilverCreek, Coverity Prevent, Cscope, and Branch Flow Analyzer to unveil 
+                        SNMP MIB compliance problems, and other non-compliances with coding standards and 
+                        assessed the efficiency of unit testing performed by developers.
+                        ● Fixed bugs reported in the system.
+                        ● Conducted a three days training program in C language for a team of thirteen members.</p>
+                        <p><h3>2. BUHIN TECH Sept 2018 - Current
+                        Location: Chennai
+                        Designation: Management Advisor 
+                        Company Description: Auto Components Manufacturing</h3>
+                        ● Help identify Business Goals, perform SWOT Analysis, develop optimal Business Strategies, 
+                        Plan and execute Performance improvement activities.
+                        ● Play a key role in improving management information systems/business processes, increasing 
+                        sales, profitability and business diversification.</p>
+                </div>
+             </div>
+            </main>
+        <footer>
+            <div class="media-icons">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>   
+        </footer>
+        </body>
                 
 </html>
